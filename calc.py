@@ -46,7 +46,10 @@ def main():
             x = float(input())
             print("Second Number")
             y = float(input())
-            print("answer : ", div(x,y))
+            if y == 0:
+                print("0으로 나눌 수 없습니다.")    
+            else:
+                print("answer : ", div(x,y))
             
         elif check > '4':
             print("0~4사이의 숫자를 입력하세요")
